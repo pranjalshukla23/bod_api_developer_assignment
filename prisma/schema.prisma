@@ -12,3 +12,11 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Inventory {
+  id Int @id @default(autoincrement())
+  sku String @unique
+  quantity Int
+  location String
+  lastUpdated DateTime @updatedAt
+}

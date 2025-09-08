@@ -26,6 +26,7 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@prisma/client": "^6.15.0",
     "cors": "^2.8.5",
     "express-rate-limit": "^8.1.0",
     "prisma": "^6.15.0"
