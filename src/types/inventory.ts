@@ -5,7 +5,11 @@ export interface Inventory {
   lastUpdated: string
 }
 
+export interface InventoryParams {
+  sku: string;
+}
+
 export interface InventorySyncRequest {
-  provider?: string;          // optional string
-  skuList?: string[];         // optional array of SKUs
+  provider?: string;          //  provider name
+  skuList?: string[];         // array of SKUs
 }

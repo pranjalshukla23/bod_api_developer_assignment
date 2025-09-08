@@ -1,5 +1,5 @@
 [
-  { "sku": "ABC-1234", "quantity": 50, "location": "Warehouse-A" },
-  { "sku": "XYZ-5678", "quantity": 100, "location": "Warehouse-B" },
-  { "sku": "LMN-9999", "quantity": 5, "location": "Warehouse-A" }
+  { "sku": "ABC-1234", "quantity": 50, "location": "Warehouse-A", "provider": "mock-wms" },
+  { "sku": "XYZ-5678", "quantity": 100, "location": "Warehouse-B", "provider": "mock-wms" },
+  { "sku": "LMN-9999", "quantity": 5, "location": "Warehouse-A", "provider": "mock-wms" }
 ]
