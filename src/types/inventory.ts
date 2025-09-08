@@ -1,8 +1,8 @@
 export interface Inventory {
-  sku: string,
-  quantity: number
-  location: string
-  lastUpdated: string
+  sku: string;
+  quantity: number;
+  location: string;
+  lastUpdated: string;
 }
 
 export interface InventoryParams {
@@ -10,6 +10,6 @@ export interface InventoryParams {
 }
 
 export interface InventorySyncRequest {
-  provider?: string;          //  provider name
-  skuList?: string[];         // array of SKUs
+  provider?: string; //  provider name
+  skuList?: string[]; // array of SKUs
 }
