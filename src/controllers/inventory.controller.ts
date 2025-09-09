@@ -6,26 +6,6 @@ import { loadAllWMSData, loadWMSData } from '../utils/dataLoader';
 import { retryWithExponentialBackoff } from '../utils/asyncRetry';
 
 export const inventoryControllers = {
-  getAllInventory: async (req: Request, res: Response, next: NextFunction) => {
-    try {
-      console.log('Retreiving inventory information for all SKU from the database...');
-
-      // get all sku items from the db
-      const skuItems = await prisma.inventory.findMany({});
-      if (!skuItems)
-        return res.status(404).json({
-          success: false,
-          message: 'Inventory items not found!',
-        });
-
-      res.status(200).json({
-        skuItems,
-      });
-    } catch (error) {
-      console.error('Error detected while fetching inventory information from db...', error);
-      next(error);
-    }
-  },
   getInventory: async (req: Request<InventoryParams>, res: Response, next: NextFunction) => {
     try {
       const { sku } = req.params;
@@ -63,6 +43,26 @@ export const inventoryControllers = {
         quantity: skuItem.quantity,
         location: skuItem.location,
         lastUpdated: skuItem.lastUpdated,
+      });
+    } catch (error) {
+      console.error('Error detected while fetching inventory information from db...', error);
+      next(error);
+    }
+  },
+  getAllInventory: async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      console.log('Retreiving inventory information for all SKU from the database...');
+
+      // get all sku items from the db
+      const skuItems = await prisma.inventory.findMany({});
+      if (!skuItems)
+        return res.status(404).json({
+          success: false,
+          message: 'Inventory items not found!',
+        });
+
+      res.status(200).json({
+        skuItems,
       });
     } catch (error) {
       console.error('Error detected while fetching inventory information from db...', error);
