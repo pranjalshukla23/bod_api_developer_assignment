@@ -11,6 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+//swagger documentation endpoint
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.get('/', (_, res) => {
@@ -19,8 +20,10 @@ app.get('/', (_, res) => {
   });
 });
 
+//inventory endpoints
 app.use('/inventory', inventoryRoutes);
 
+// middleware to handle internal server errors
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   const message = err instanceof Error ? err.message : 'Internal server error';
 

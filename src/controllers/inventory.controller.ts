@@ -3,6 +3,7 @@ import { prisma } from '../lib/prisma';
 import { isValidSku } from '../utils/validation';
 import { Inventory, InventoryParams, InventorySyncRequest } from '../types/inventory';
 import { loadAllWMSData, loadWMSData } from '../utils/dataLoader';
+import { retryWithExponentialBackoff } from '../utils/asyncRetry';
 
 export const inventoryControllers = {
   getAllInventory: async (req: Request, res: Response, next: NextFunction) => {
@@ -45,12 +46,10 @@ export const inventoryControllers = {
 
       console.log(`fetching inventory information from db for SKU: ${sku}... `);
 
-      // fetch sku item which matches the sku
-      const skuItem = await prisma.inventory.findUnique({
-        where: {
-          sku,
-        },
-      });
+      //fetching inventory information (with retry mechanism using 5 attempts)
+      const skuItem = await retryWithExponentialBackoff(() =>
+        prisma.inventory.findUnique({ where: { sku } }),
+      );
 
       // if sku is not found in db
       if (!skuItem) {

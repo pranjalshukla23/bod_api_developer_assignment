@@ -1,5 +1,620 @@
 [
-  { "sku": "ABC-1234", "quantity": 50, "location": "Warehouse-A", "provider": "mock-wms" },
-  { "sku": "XYZ-5678", "quantity": 100, "location": "Warehouse-B", "provider": "mock-wms" },
-  { "sku": "LMN-9999", "quantity": 5, "location": "Warehouse-A", "provider": "mock-wms" }
+  {
+    "sku": "ABC-1234",
+    "quantity": 50,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "XYZ-5678",
+    "quantity": 100,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "LMN-9999",
+    "quantity": 5,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0001",
+    "quantity": 19,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0002",
+    "quantity": 81,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0003",
+    "quantity": 89,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0004",
+    "quantity": 94,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0005",
+    "quantity": 19,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0006",
+    "quantity": 97,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0007",
+    "quantity": 98,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0008",
+    "quantity": 64,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0009",
+    "quantity": 56,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0010",
+    "quantity": 68,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0011",
+    "quantity": 49,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0012",
+    "quantity": 94,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0013",
+    "quantity": 45,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0014",
+    "quantity": 74,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0015",
+    "quantity": 73,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0016",
+    "quantity": 82,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0017",
+    "quantity": 86,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0018",
+    "quantity": 90,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0019",
+    "quantity": 8,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0020",
+    "quantity": 48,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0021",
+    "quantity": 39,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0022",
+    "quantity": 95,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0023",
+    "quantity": 44,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0024",
+    "quantity": 41,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0025",
+    "quantity": 24,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0026",
+    "quantity": 94,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0027",
+    "quantity": 87,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0028",
+    "quantity": 12,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0029",
+    "quantity": 48,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0030",
+    "quantity": 89,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0031",
+    "quantity": 20,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0032",
+    "quantity": 89,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0033",
+    "quantity": 57,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0034",
+    "quantity": 100,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0035",
+    "quantity": 47,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0036",
+    "quantity": 16,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0037",
+    "quantity": 46,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0038",
+    "quantity": 7,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0039",
+    "quantity": 4,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0040",
+    "quantity": 60,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0041",
+    "quantity": 3,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0042",
+    "quantity": 12,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0043",
+    "quantity": 71,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0044",
+    "quantity": 93,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0045",
+    "quantity": 75,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0046",
+    "quantity": 18,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0047",
+    "quantity": 19,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0048",
+    "quantity": 90,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0049",
+    "quantity": 54,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0050",
+    "quantity": 79,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0051",
+    "quantity": 26,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0052",
+    "quantity": 71,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0053",
+    "quantity": 95,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0054",
+    "quantity": 54,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0055",
+    "quantity": 4,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0056",
+    "quantity": 88,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0057",
+    "quantity": 55,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0058",
+    "quantity": 79,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0059",
+    "quantity": 27,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0060",
+    "quantity": 20,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0061",
+    "quantity": 81,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0062",
+    "quantity": 97,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0063",
+    "quantity": 30,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0064",
+    "quantity": 19,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0065",
+    "quantity": 97,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0066",
+    "quantity": 15,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0067",
+    "quantity": 95,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0068",
+    "quantity": 88,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0069",
+    "quantity": 45,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0070",
+    "quantity": 93,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0071",
+    "quantity": 38,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0072",
+    "quantity": 42,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0073",
+    "quantity": 99,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0074",
+    "quantity": 76,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0075",
+    "quantity": 78,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0076",
+    "quantity": 38,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0077",
+    "quantity": 25,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0078",
+    "quantity": 34,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0079",
+    "quantity": 93,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0080",
+    "quantity": 46,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0081",
+    "quantity": 32,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0082",
+    "quantity": 16,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0083",
+    "quantity": 20,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0084",
+    "quantity": 39,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0085",
+    "quantity": 28,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0086",
+    "quantity": 4,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0087",
+    "quantity": 52,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0088",
+    "quantity": 1,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0089",
+    "quantity": 3,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0090",
+    "quantity": 48,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0091",
+    "quantity": 12,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0092",
+    "quantity": 66,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0093",
+    "quantity": 40,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0094",
+    "quantity": 93,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0095",
+    "quantity": 25,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0096",
+    "quantity": 95,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0097",
+    "quantity": 1,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0098",
+    "quantity": 84,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0099",
+    "quantity": 45,
+    "location": "Warehouse-B",
+    "provider": "mock-wms"
+  },
+  {
+    "sku": "ITEM-0100",
+    "quantity": 45,
+    "location": "Warehouse-A",
+    "provider": "mock-wms"
+  }
 ]
