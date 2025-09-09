@@ -1,14 +1,17 @@
 import express from 'express';
 import cors from 'cors';
-
+import swaggerUi from 'swagger-ui-express';
 import { Request, Response, NextFunction } from 'express';
 import config from './config/config';
 import { inventoryRoutes } from './routes/inventory.route';
+import { swaggerDocs } from './swagger/swagger';
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.get('/', (_, res) => {
   res.status(200).json({

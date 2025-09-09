@@ -18,7 +18,6 @@ export const inventoryControllers = {
         });
 
       res.status(200).json({
-        success: true,
         skuItems,
       });
     } catch (error) {
@@ -60,7 +59,12 @@ export const inventoryControllers = {
         });
       }
 
-      res.status(200).json({ skuItem });
+      res.status(200).json({
+        sku: skuItem.sku,
+        quantity: skuItem.quantity,
+        location: skuItem.location,
+        lastUpdated: skuItem.lastUpdated,
+      });
     } catch (error) {
       console.error('Error detected while fetching inventory information from db...', error);
       next(error);
